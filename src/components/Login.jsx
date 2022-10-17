@@ -23,11 +23,11 @@ const Login = () => {
   // Otp state
   const [otp, setOtp] = useState('');
 
-    // Get input email
-    const inputEmail = (e) => {
-      // Set to the email state
-      setEmail(e.target.value);
-    };
+  // Get input email
+  const inputEmail = (e) => {
+    // Set to the email state
+    setEmail(e.target.value);
+  };
 
   // Get input password
   const inputPassword = (e) => {
@@ -242,7 +242,7 @@ const Login = () => {
               </button>
               <input onBlur={inputOtp} className={`appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none hidden ${phoneNumber && '!block'}`} type="number" placeholder="OTP" aria-label="OTP" />
             </div>
-            <button onClick={handlePhoneSignup} type="submit" className="w-fit mx-auto px-5 py-2 rounded-md bg-violet-600 text-gray-50">Create Account</button>
+            <button onClick={handlePhoneSignup} type="submit" className="w-fit mx-auto px-5 py-2 rounded-md bg-violet-600 text-gray-50">Login with OTP</button>
           </div>}
         </div>
         <div className="flex items-center w-full my-4">
