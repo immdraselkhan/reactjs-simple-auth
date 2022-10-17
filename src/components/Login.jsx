@@ -23,9 +23,15 @@ const Login = () => {
   // Otp state
   const [otp, setOtp] = useState('');
 
+    // Get input email
+    const inputEmail = (e) => {
+      // Set to the email state
+      setEmail(e.target.value);
+    };
+
   // Get input password
   const inputPassword = (e) => {
-    // Input password set to the state
+    // Set to the password state
     setPassword(e.target.value);
   };
 
